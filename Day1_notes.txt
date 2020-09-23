@@ -1,0 +1,30 @@
+﻿通过命令创建：
+
+django-admin startproject mysite
+
+cd mysite
+
+python manage.py runserver  127.0.0.1:8080(可加可不加)
+wsgi.py   -----web服务网关接口
+
+Django程序目录：
+      mysite 
+	      mysite  
+		            - settings.py  # Django 配置文件
+					- url.py       # 路由系统： url->函数
+					-wsgi.py       # 用于定义Django用socket，wsgiref，uwsgi
+					
+					# 对当前Django程序所有操作可以基于python manage.py runserver
+					
+静态文件的配置
+
+      STATIC_URL = '/static/'
+      # 配置css
+      STATICFILES_DIRS=(
+          os.path.join(BASE_DIR,'sta'),  sta文件夹下存css文件
+        )
+      h5文件引用：
+       <link rel="stylesheet" href="/static/commons.css">
+	  h5文件的配置：
+	   'DIRS': [os.path.join(BASE_DIR,'templates')], 
+	   templates文件里存h5文件
