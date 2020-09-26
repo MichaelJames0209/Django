@@ -1,0 +1,26 @@
+GET请求  -》只有request.GET 有值
+
+（把参数包括在url里）
+
+POST请求 -》request.GET和request.POST都可能有值
+
+request.GET  -》请求头中的url
+
+request.POST -》请求体
+
+模板引擎的特殊标记
+{{}}
+
+通过列表去取 
+'users':['李志','李杰']
+
+模板中 
+      {{users.0}}
+	  {{users.0}}
+
+通过字典去取
+'users':{'key1':'value1','key2':'value2'}
+
+模板中
+		{{users.key1}}
+		{{users.key2}}
