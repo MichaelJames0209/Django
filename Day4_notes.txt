@@ -1,0 +1,61 @@
+今日内容：
+	1.对话框
+		单表
+			添加
+			编辑
+			删除
+			
+			PS:
+			a.js阻止默认事件发生
+			   <a href='地址' onclick='方法()'>
+                默认先执行onclick
+                再跳转到新的链接
+                若想只执行方法，不跳转
+                onclick='return 方法()'
+				方法(){
+				xxxxxxxxx
+				return false; //true - 都执行
+				}
+			b.location.reload()
+			c.HttpResponse(json.dumps(xxxxx))
+			d.JSON.parse()
+	
+		一对多
+		    a.JQuery绑定事件阻止默认事件发生
+	2.多对多
+	
+	3.Bootstrap
+	
+	4.fontawesome
+	
+	
+select下拉框 加上属性multipe可多选
+
+ <select multiple>
+            {% for item in classlist %}
+                <option value="{{ item.id }}">{{ item.title }}</option>
+            {% endfor %}
+
+        </select>
+		
+ajax({
+            url:'/model_add_teacher/',
+            type: 'POST',
+            data:{'name':name,'classid_list':classid_list},
+            traditional:true,
+            {#如果提交的数据有列表，则添加此属性#}
+                {#不加处理直接将列表发到后台，若不加这一句则后台用传统方法取不到数据#}
+               
+	对话框编辑   [11,22,33].indexof(222)
+	
+	
+	
+	插件
+	-bootstrap（-）
+		- 看图拷贝
+		- 常用标签
+		- 响应式
+		- js
+	-fontawesome
+		
+	
