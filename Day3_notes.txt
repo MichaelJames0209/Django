@@ -1,0 +1,42 @@
+今日内容：
+    0.班级管理
+	后台views中要判断
+	1.学生管理
+
+	2.模态对话框
+
+	3.Ajax
+	
+	 jQuery
+	 
+	 $.ajax({
+			url:'要提交的地址'
+			type：'POST',//提交方式
+			data:{'k1':'v1','k2':'v2'}
+			success:function(data){
+			//当服务器端处理完毕后，自动执行的回调函数
+			//data是返回的数据
+			}
+	 })
+	 
+	 其他：
+	 1.模板语言if条件语句
+	 2.Form表单提交，页面会刷新
+	 3.Ajax提交页面不刷新
+	 4.js实现页面跳转：
+	 location.href = '要跳转的地址'
+	 
+	 5.模态对话框
+			- 少量对话框
+			- 数据少
+	   新URL
+			- 操作多
+			-对于大量的数据以及操作
+检索学生信息并将对应的class数据在右边拼接
+select * from student left JOIN class on student.class_id=class.id
+
+拼接后的表中取出需要的数据列
+select student.id,student.name,class.title from student 
+left JOIN class on student.class_id=class.id
+
+
